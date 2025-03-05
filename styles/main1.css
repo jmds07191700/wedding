@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Pretendard-Bold";
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Bold2";
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Semibold";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Semibold2";
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Semibold3";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-regular";
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-regular2";
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Thin";
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+}
+@font-face {
+    font-family: "Pretendard-Thin2";
+    font-weight: 100;
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+}
+
+
+
+
+ul,li {list-style:none;padding: 0;margin: 0;letter-spacing: -1px;}
+#top{margin:0;}
+p,div,li {font-family: 'Pretendard-regular'; color:white;}
+.page_1 li,p {margin: 3px 20px;font-size: 45px; letter-spacing: -1px;}
+body {background-color: black;}
+.page_1{height:600px;}
+.gra_1{font-family: 'Pretendard-Semibold2';
+    background-image: linear-gradient(to right, rgb(205, 205, 143), white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gra_2{font-family: 'Pretendard-Semibold2';
+    background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 231, 251));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.white_1{font-family: 'Pretendard-Semibold2';}
+.ban{mix-blend-mode: difference;
+	/* ... */;margin-top: -44.5px;font-weight: 600;}
+.back_w{background-color: white;height: 140px;margin-top: 100px;}
+
+
+.page_2{text-align: center; height:500px;
+}
+.img_1{width:90%;padding:30px 0;}
+.white_2{font-size: 32px;font-family: 'Pretendard-Semibold3';}
+.blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size: 32px;}
+.white_3{font-family: 'Pretendard-Thin';font-size: 20px;}
+
+.page_4{margin-top: 65px;}
+.groom_1{height:470px}
+
+.right{float: right;}
+.left{float: left;}
+.white_4{font-family: 'Pretendard-Thin';font-size: 22px;}
+.right .white_4 {margin-top: ;}
+.white_5{font-family: 'Pretendard-Semibold';font-size: 30px;}
+.groom_img{width:60%;float: right;padding: 15px 20px;}
+.groom_img img{width:100%}
+.with_txt {text-align: center;height:200px;}
+.with_txt p{font-family: 'Pretendard-Thin'; font-size: 15px;font-style: italic;padding:2.5px}
+
+.with_il{text-align: center;}
+.white_6{font-family: 'Pretendard-regular'; font-size: 15px;}
+.gra_3{font-family: 'Pretendard-Bold';
+    background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 231, 251));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;}
+
+  .with_year{text-align: center; font-family: 'Pretendard-Thin';font-size: 16px;}
+  .with_year ul{padding: 0; margin: 0;}
+  .with_year ul li {list-style: none;padding: 3px;}
+
+  
+  .bride_1{height: 470px;}
+  .left{float: left;}
+  .bride_img{width:60%;float: left;padding: 15px 20px;}
+  .bride_img img{width:100%}
+
+  .info_1{padding-top: 65px;}
+  .white_6{font-size: 15px; font-family: 'Pretendard-Thin2';}
+
+  /* 타이핑효과 */
+
+  /* 깜빡임 효과 */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.twinkle {
+  animation: blink 1s infinite; /* 1초 간격으로 무한 반복 */
+}
+
+/* map */
+.map{text-align: center;}
+
+
+/* 스크롤 애니메이션 */
+/* 애니메이션 */
+
+.fadeinleft {
+  opacity:0;
+  margin-bottom:-100px;
+  max-width:100%;
+}
+
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.content { position: relative; animation: fade_up 1.5s; opacity: 0; margin-bottom: -100px;}
+@keyframes fade_up {
+	0% {opacity: 0; transform: translateY(100%); }
+	to {opacity: 1; transform: translateY(0); }
+}
