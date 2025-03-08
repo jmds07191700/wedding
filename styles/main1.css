@@ -92,7 +92,7 @@ body {background-color: black;}
 .right{float: right;}
 .left{float: left;}
 .white_4{font-family: 'Pretendard-Thin';font-size: 22px;}
-.right .white_4 {margin-top: ;}
+/* .right .white_4 {} */
 .white_5{font-family: 'Pretendard-Semibold';font-size: 30px;}
 .groom_img{width:60%;float: right;padding: 15px 20px;}
 .groom_img img{width:100%}
@@ -154,12 +154,8 @@ body {background-color: black;}
 
 .scroll_on.type_bottom {transform: translate(0, 50px);}
 .content { position: relative; animation: fade_up 1.5s; opacity: 0; margin-bottom: -100px;}
-@keyframes fade_up {
+
+/* @keyframes fade_up {
 	0% {opacity: 0; transform: translateY(100%); }
 	to {opacity: 1; transform: translateY(0); }
-}
-
-
-.test{
-  just test.
-}
+} */
