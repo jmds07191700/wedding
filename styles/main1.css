@@ -1,41 +1,49 @@
 @font-face {
     font-family: "Pretendard-Bold";
     font-weight: 900;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-Bold2";
     font-weight: 800;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-Semibold";
     font-weight: 700;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-Semibold2";
     font-weight: 600;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-Semibold3";
     font-weight: 500;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-regular";
     font-weight: 400;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-regular2";
     font-weight: 300;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
 }
 @font-face {
     font-family: "Pretendard-Thin";
     font-weight: 200;
+    letter-spacing: 0.5px;
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
 }
 @font-face {
@@ -45,10 +53,10 @@
 }
 
 
-ul,li {list-style:none;padding: 0;margin: 0;}
+ul,li {list-style:none;padding: 0;margin: 0;letter-spacing: -1px;}
 #top{margin:0;}
 p,div,li {font-family: 'Pretendard-regular'; color:white;}
-.page_1 li,p {margin: 3px 20px;font-size: 3.0em;}
+.page_1 li,p {margin: 3px 20px;font-size: 45px; letter-spacing: -1px;}
 body {background-color: black;}
 .page_1{height:600px;}
 .gra_1{font-family: 'Pretendard-Semibold2';
@@ -65,7 +73,7 @@ body {background-color: black;}
 }
 .white_1{font-family: 'Pretendard-Semibold2';}
 .ban{mix-blend-mode: difference;
-	/* ... */;margin-top: -47.7px;font-weight: 600;}
+	/* ... */;margin-top: -44px;font-weight: 600;}
 .back_w{background-color: white;height: 140px;margin-top: 100px;}
 
 
