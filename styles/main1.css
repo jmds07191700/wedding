@@ -167,7 +167,7 @@ body {background-color: black;}
   max-width:100%;
 }
 
-.scroll_on.type_bottom {transform: translate(0, -150px);}
+.scroll_on.type_bottom {transform: translate(0, 150px);}
 .content { position: relative; animation: fade_up 1s; opacity: 0; margin-bottom: -200px;}
 
 /* @keyframes fade_up {
