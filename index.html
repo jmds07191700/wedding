@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>한덕수와 박정민</title>
+    <title>한덕수💓박정민 결혼합니다!💍</title>
     <meta content="덕수공주와 정민장군" name="description"/>
     <!-- <meta property="og:image" content="images/pic2.jpeg"> -->
     <!-- <meta property="fb:app_id" content="781066922265598" /> -->
@@ -19,6 +19,11 @@
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
           rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script src="https://unpkg.com/hangul-js"></script>
+<script src="https://unpkg.com/type-hangul@latest/dist/type-hangul.min.js"></script>
+<script src="https://unpkg.com/type-hangul"></script>
+<script src="https://cdn.jsdelivr.net/npm/typehangul@latest"></script>
+<script src="js/main.js"></script>
     
 
 
@@ -47,18 +52,47 @@
                         <li class="gra_2">모바일 청첩장</li>
                         <li class="white_1">시작합니다.</li>
                     </ul> -->
-                    <p style="font-size:53px;margin:50px 20px;padding-top: 80px;font-family: 'Pretendard-Semibold2';letter-spacing: 0.2px;">안녕하세요</p>
+                    <p class="one"style="font-size:53px;margin:50px 20px;padding-top: 80px;font-family: 'Pretendard-Semibold2';letter-spacing: 0.1px;">안녕하세요</p>
                     <p class="gra_1" style="font-family: 'Pretendard-Semibold2';">한덕수 · 박정민</p>
                     <p class="white_1">인사드립니다.</p><br><br><br><br>
                     <p class="white_1">지금부터</p>
                     <p class="gra_2">모바일 청첩장</p>
                     <p class="white_1">시작합니다.</p><br>
-                    <p>test</p>
                 </div>
+                <script>
+                    //    TypeHangul.type('#type .one');
+                    //    TypeHangul.type('#type .gra_1');
+                    //    TypeHangul.type('#type .white_1');
+                    //    TypeHangul.type('#type .gra_2');
+                    //    TypeHangul.type('#type .white_1'); 
+                      $(document).ready(function () {
+    const $paragraphs = $("#type p"); // 모든 <p> 태그 선택
+  
+    function applyTypeHangul($element) {
+      return new Promise((resolve) => {
+        const typeInstance = new TypeHangul($element[0], {
+          intervalType: 100, // 타이핑 속도 (ms)
+          intervalDelay: 500, // 문장 사이의 딜레이
+        });
+  
+        // 타이핑 완료 후 resolve 호출
+        typeInstance.run(() => resolve());
+      });
+    }
+  
+    async function startTyping() {
+      for (let i = 0; i < $paragraphs.length; i++) {
+        await applyTypeHangul($($paragraphs[i])); // 순차적으로 타이핑 효과 적용
+      }
+    }
+  
+    startTyping(); // 타이핑 시작
+  });
+                </script>
             </div>
         </div>
            
-            <div class="page_2 content">
+            <div class="page_2 content" style="height:500px">
                 <div class="back_w">
                 </div>
                 <p class="ban" style="text-align:left;">wedding</p>
@@ -267,6 +301,7 @@
         "mapHeight" : "50%"
     }).render();
 </script>
+
 
 </body>
 </html>

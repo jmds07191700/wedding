@@ -77,3 +77,41 @@ $("a.smooth-scroll").click(function (event) {
         }
     }
 });
+// var $target = document.querySelector('#type p');
+// $target.addEventListener('th.afterType', function (e) {
+// });
+//     TypeHangul.type('#type p');
+
+
+  // 실행
+
+  // TypeHangul을 이용해 각 <p> 태그에 순차적으로 타이핑 효과 적용
+  $(document).ready(function () {
+    const $paragraphs = $("#type p"); // #type 안의 모든 <p> 태그 가져오기
+  
+    function applyTypeHangul($element) {
+      return new Promise((resolve) => {
+        const typeInstance = new TypeHangul($element.get(0), { // jQuery 객체를 DOM 객체로 변환
+          intervalType: 100, // 글자 출력 간격 (ms)
+          intervalDelay: 500, // 한 문장 간 대기 시간
+        });
+  
+        // 타이핑 효과 실행 및 완료 후 resolve 호출
+        typeInstance.run(() => {
+          resolve(); // 다음 작업 진행
+        });
+      });
+    }
+  
+    async function startTyping() {
+      for (let i = 0; i < $paragraphs.length; i++) {
+        await applyTypeHangul($($paragraphs[i])); // 각 <p> 태그에 타이핑 효과 적용
+      }
+    }
+  
+    startTyping(); // 타이핑 효과 시작
+  });
+
+  console.log("TypeHangul 실행 시작:", $element.text());
+
+  
