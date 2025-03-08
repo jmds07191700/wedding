@@ -53,6 +53,8 @@
 }
 
 
+
+
 ul,li {list-style:none;padding: 0;margin: 0;letter-spacing: -1px;}
 #top{margin:0;}
 p,div,li {font-family: 'Pretendard-regular'; color:white;}
@@ -73,37 +75,39 @@ body {background-color: black;}
 }
 .white_1{font-family: 'Pretendard-Semibold2';}
 .ban{mix-blend-mode: difference;
-	/* ... */;margin-top: -44px;font-weight: 600;}
+	/* ... */;margin-top: -44.5px;font-weight: 600;}
 .back_w{background-color: white;height: 140px;margin-top: 100px;}
 
 
-.page_2{text-align: center;}
+.page_2{text-align: center; height:500px;
+}
 .img_1{width:90%;padding:30px 0;}
-.white_2{font-size: 2.1em;font-family: 'Pretendard-Semibold3';}
-.blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size: 2.1em;}
-.white_3{font-family: 'Pretendard-Thin';font-size: 1.4em;}
+.white_2{font-size: 32px;font-family: 'Pretendard-Semibold3';}
+.blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size: 32px;}
+.white_3{font-family: 'Pretendard-Thin';font-size: 20px;}
 
 .page_4{margin-top: 65px;}
 .groom_1{height:470px}
 
 .right{float: right;}
 .left{float: left;}
-.white_4{font-family: 'Pretendard-Thin';font-size: 1.5em;}
-.white_5{font-family: 'Pretendard-Semibold';font-size: 2.2em;}
+.white_4{font-family: 'Pretendard-Thin';font-size: 22px;}
+.right .white_4 {margin-top: ;}
+.white_5{font-family: 'Pretendard-Semibold';font-size: 30px;}
 .groom_img{width:60%;float: right;padding: 15px 20px;}
 .groom_img img{width:100%}
 .with_txt {text-align: center;height:200px;}
-.with_txt p{font-family: 'Pretendard-Thin'; font-size: 0.95em;font-style: italic;padding:2.5px}
+.with_txt p{font-family: 'Pretendard-Thin'; font-size: 15px;font-style: italic;padding:2.5px}
 
 .with_il{text-align: center;}
-.white_6{font-family: 'Pretendard-regular'; font-size: 1.5em;}
+.white_6{font-family: 'Pretendard-regular'; font-size: 15px;}
 .gra_3{font-family: 'Pretendard-Bold';
     background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 231, 251));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;}
 
-  .with_year{text-align: center; font-family: 'Pretendard-Thin';font-size: 1.0em;}
+  .with_year{text-align: center; font-family: 'Pretendard-Thin';font-size: 16px;}
   .with_year ul{padding: 0; margin: 0;}
   .with_year ul li {list-style: none;padding: 3px;}
 
@@ -114,7 +118,7 @@ body {background-color: black;}
   .bride_img img{width:100%}
 
   .info_1{padding-top: 65px;}
-  .white_6{font-size: 0.95em; font-family: 'Pretendard-Thin2';}
+  .white_6{font-size: 15px; font-family: 'Pretendard-Thin2';}
 
   /* 타이핑효과 */
 
@@ -141,33 +145,21 @@ body {background-color: black;}
 
 /* 스크롤 애니메이션 */
 /* 애니메이션 */
-@keyframes appear{
-    from {
-      opacity: 0;
-    }
-  
-    to{
-      opacity: 1;
-    }
-  }
-  
-  @keyframes appear_from_bottom{
-    0%{
-      transform: translateY(150px);
-      opacity: 0;
-    }
-  
-    100%{
-      opacity: 1;
-    }
-  }
-  
-  .text1 {
-    display:none;
-    animation: appear_from_bottom ease 1.5s;
-  }
-  
-  .text2{
-    display:none; 
-    animation: appear;}
-    
+
+.fadeinleft {
+  opacity:0;
+  margin-bottom:-100px;
+  max-width:100%;
+}
+
+.scroll_on.type_bottom {transform: translate(0, 50px);}
+.content { position: relative; animation: fade_up 1.5s; opacity: 0; margin-bottom: -100px;}
+@keyframes fade_up {
+	0% {opacity: 0; transform: translateY(100%); }
+	to {opacity: 1; transform: translateY(0); }
+}
+
+
+.test{
+  just test.
+}
