@@ -53,6 +53,13 @@
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Shilla_CultureB-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* typing */
 /* #type p::after {
   content: "|";
@@ -68,13 +75,32 @@
   }
 } */
 
+body{
+  margin:0;
+  background-color: black;
+}
+
+/* main_img */
+.main{
+  text-align: center;
+  padding: 20px;
+}
+.main_img{
+  height:500px;
+  background-image: url(/images/with_1.jpeg);
+  background-size: cover;
+}
+.main_txt{font-family: 'Shilla_CultureB-Bold';}
+
+/* header */
+.top{text-align: left;margin: 0;}
+.top .one {padding-top:80px;}
 
 ul,li {list-style:none;padding: 0;margin: 0;letter-spacing: -1px;}
 #top{margin:0;}
 p,div,li {font-family: 'Pretendard-regular'; color:white;}
 .page_1 li,p {margin: 3px 20px;font-size: 45px; letter-spacing: -1px;}
-body {background-color: black;}
-.page_1{height:600px;}
+/* .page_1{height:600px;} */
 .gra_1{font-family: 'Pretendard-Semibold2';
     background-image: linear-gradient(to right, rgb(205, 205, 143), white);
   background-clip: text;
@@ -82,57 +108,53 @@ body {background-color: black;}
   color: transparent;
 }
 .gra_2{font-family: 'Pretendard-Semibold2';
-    background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 231, 251));
+    background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 218, 251));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 .white_1{font-family: 'Pretendard-Semibold2';}
-.ban{mix-blend-mode: difference;
-	/* ... */;margin-top: -44.5px;font-weight: 600;}
+
+/* page_1 */
+.ban{mix-blend-mode: difference; font-weight: 600;padding-top: 95.6px;}
 .back_w{background-color: white;height: 140px;margin-top: 100px;}
-
-
-.page_2{text-align: center; height:500px;
-}
-.img_1{width:90%;padding:30px 0;}
+.img_box{text-align: center;}
+.img_1{width:90%;padding-top: 40px;}
 .white_2{font-size: 32px;font-family: 'Pretendard-Semibold3';}
 .blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size: 32px;}
 .white_3{font-family: 'Pretendard-Thin';font-size: 20px;}
-.page_3{height:300px;}
 
-.page_4{margin-top: 65px;}
+/* page_2 */
 .groom_1{height:470px}
-
 .right{float: right;}
 .left{float: left;}
-.white_4{font-family: 'Pretendard-Thin';font-size: 22px;}
-/* .right .white_4 {} */
+.page_3 .white_4 , .page_2 .white_4{font-family: 'Pretendard-Thin';font-size: 22px;margin-top: 45px;}
 .white_5{font-family: 'Pretendard-Semibold';font-size: 30px;}
 .groom_img{width:60%;float: right;padding: 15px 20px;}
 .groom_img img{width:100%}
-.with_txt {text-align: center;height:200px;}
+.with_txt {text-align: center;padding-bottom: 50px;}
 .with_txt p{font-family: 'Pretendard-Thin'; font-size: 15px;font-style: italic;padding:2.5px}
-
-.with_il{text-align: center;}
+.with_il{text-align: center;padding: 20px 0;}
 .white_6{font-family: 'Pretendard-regular'; font-size: 15px;}
 .gra_3{font-family: 'Pretendard-Bold';
     background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 231, 251));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;}
-
-  .with_year{text-align: center; font-family: 'Pretendard-Thin';font-size: 16px;}
+  .with_year{text-align: center; font-family: 'Pretendard-Thin2';font-size: 14px;}
   .with_year ul{padding: 0; margin: 0;}
-  .with_year ul li {list-style: none;padding: 3px;}
+  .with_year ul li {list-style: none;padding: 3px; font-family: 'Pretendard-Thin2';}
 
+  /* page_3 */
   
   .bride_1{height: 470px;}
   .left{float: left;}
   .bride_img{width:60%;float: left;padding: 15px 20px;}
   .bride_img img{width:100%}
 
+  /* page_4 */
   .info_1{padding-top: 65px;}
+  .page_4 .white_4{font-family: 'Pretendard-Thin'; font-size: 22px;}
   .white_6{font-size: 15px; font-family: 'Pretendard-Thin2';}
 
   /* 타이핑효과 */
