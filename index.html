@@ -20,9 +20,12 @@
 </head>
 <body>
     <div class="main">
-        <div class="main_img">
+        <div class="main_img typing-container">
+            <!-- <span id="text"></span><span id="cursor"></span> -->
             <p class="main_txt">Wedding Day</p>
         </div>
+
+        <audio controls autoplay loop id="player" src="images/antifreeze.mp3"></audio>
     </div>    
 
     <header>
@@ -36,12 +39,12 @@
         </div>
     </header>
 
-    <div class="page_1">
+    <div class="page_1 motion motion_up">
         <div class="back_w">
             <p class="ban">wedding</p>
         </div>
         <div class="img_box">
-            <img src="images/bride_4.jpeg" class="img_1" alt="">
+            <img src="images/bride_3.jpeg" class="img_1" alt="">
         </div>
         <br><br>
         <p class="white_2">2023년 3월부터 시작한 <br> 그들의 여정!</p>
@@ -56,6 +59,72 @@
         <br>
         <p class="white_3">25.07.19. 17:00 <br>보테가마지호 로스타뇨 홀</p>
     </div>
+    <br><br><br>
+
+    <div class="page_1_1">
+        
+        <div class="back_w">
+            <p class="ban">Photo</p>
+        </div>
+        <br><br><br>
+        <br>
+
+        <div>
+            <ul class="list">
+                <li class="item">
+                    <div class="card"><img src="images/with_10.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_6.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_5.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_4.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_3.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_12.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_16.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_20.jpeg" alt=""></div>
+                </li>
+                <li class="item">
+                    <div class="card"><img src="images/with_19.jpeg" alt=""></div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+<!-- 
+
+<div class="container">
+    <div class="block">
+        <img src="images/with_6.jpeg">
+    </div>
+    <div class="block">
+        <img src="images/with_11.jpeg">
+    </div>
+    <div class="block">
+        <img src="images/with_13.jpeg">
+    </div>
+    <div class="block">
+        <img src="images/with_12.jpeg">
+    </div>
+</div> -->
+
+
+
+   
 
     <div class="page_2">
         <div class="back_w">
@@ -69,8 +138,8 @@
                     <img src="images/with_1.jpeg" alt="">
                 </div>
                 <div>
-                    <p class="right white_4" style="margin-top: 235px;margin-right: 0;padding:0;">신랑<br>―</p>
-                    <p class="right white_5" style="margin-right:0;">한덕수</p>
+                    <p class="right white_4" style="margin-top: 270px;margin-right:0;padding:0;font-size: 20px;">신랑<br> ―</p>
+                    <p class="right white_5" style="margin-right:0;font-size: 26px;">한덕수</p>
                 </div>
             </div>
 
@@ -120,8 +189,8 @@
                 <img src="images/bride_2.jpeg" alt="">
             </div>
             <div>
-                <p class="left white_4" style="margin-top: 235px;margin-left: 0;padding:0;">신부<br>―</p>
-                <p class="left white_5" style="margin-left:0;">박정민</p>
+                <p class="left white_4" style="margin-top: 270px;margin-left: 0;padding:0;font-size: 20px;">신부<br>―</p>
+                <p class="left white_5" style="margin-left:0;font-size: 26px;">박정민</p>
             </div>
 
         </div>
@@ -200,6 +269,16 @@
         <br><br><br>
     </div>
 
+    <div class="page_5">
+        <div class="back_w">
+            <p class="ban">contact</p>
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+
 
     </div>
         
@@ -213,6 +292,61 @@
             "mapWidth" : "90%",
             "mapHeight" : "50%"
         }).render();
+
+        $(document).ready(function() {
+    $(window).scroll( function(){
+			
+        $('.page_1').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},700);
+                $(this).animate({'translateY':'50px'},700);
+
+            }
+            
+        }); 
+    });
+
+});
+
+// 흐르는 사진
+
+let roller = document.querySelector('.roller .rolling_list');
+roller.id = 'roller1';
+let clone = roller.cloneNode(true)
+clone.id = 'roller2';
+document.querySelector('.roller').appendChild(clone);
+roller.classList.add('original');
+clone.classList.add('clone');
+
+$(document).ready(function(){
+    $('.item').click
+})
+
+var col = 3;
+    var xmg = 10;
+    var ymg = 10;
+
+    function block_sit(parent, node, col = 3, xmg = 10, ymg = 10){
+        $(parent).BlocksIt({
+            numOfCol: col,
+            offsetX: xmg,
+            offsetY: ymg,
+            blockElement: node
+        });
+    }
+
+    $('.block').masonry({
+            // options
+            itemSelector: node,
+            columnWidth: 200,
+            gutter: 10
+        });
+
+
     </script>
     
 
