@@ -351,16 +351,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let startX = 0;
     let endX = 0;
 
-    const openModal = (index) => {
-      currentIndex = index;
-      modalImage.src = galleryImages[currentIndex].src;
+    const openModal = (imageSrc) => {
+      modalImage.src = imageSrc;
       modal.style.display = 'flex';
+      document.body.classList.add('modal-open'); // Prevent body scrolling
     };
 
     const closeModal = () => {
       modal.style.display = 'none';
       modalImage.src = '';
+      document.body.classList.remove('modal-open'); // Re-enable body scrolling
     };
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+      
 
     const showNextImage = () => {
       currentIndex = (currentIndex + 1) % galleryImages.length;
