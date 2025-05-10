@@ -139,22 +139,24 @@ p,div,li {font-family: 'Pretendard-regular'; color:white;}
 background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
+font-size: 40px;
 }
 .gra_2{font-family: 'Pretendard-Semibold2';
   background-image: linear-gradient(to right, rgb(205, 205, 143), rgb(3, 218, 251));
 background-clip: text;
 -webkit-background-clip: text;
 color: transparent;
+font-size: 40px;
 }
-.white_1{font-family: 'Pretendard-Semibold2';}
+.white_1{font-family: 'Pretendard-Semibold2';font-size: 40px;}
 
 /* page_1 */
-.ban{mix-blend-mode: difference; font-weight: 600;padding-top:100.9px;font-size: 40px;font-family: "Pretendard-Semibold2";}
+.ban{mix-blend-mode: difference; font-weight: 600;padding-top:100.9px;font-size: 40px;font-family: "Pretendard-Semibold2";letter-spacing: -2px;}
 .back_w{background-color: white;height: 140px;margin-top: 100px;}
 .img_box{text-align: center;}
 .img_1{width:90%;padding-top: 40px;}
-.white_2{font-size: 32px;font-family: 'Pretendard-Semibold3';}
-.blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size: 32px;}
+.white_2{font-size: 27px;font-family: 'Pretendard-Semibold3';}
+.blue_1{color:rgb(0, 255, 234); font-family: 'Pretendard-Semibold3';font-size:27px;}
 .white_3{font-family: 'Pretendard-Thin';font-size: 20px;}
 
 /* page_2 */
