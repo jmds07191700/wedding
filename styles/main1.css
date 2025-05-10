@@ -87,10 +87,43 @@ padding: 20px;
 }
 .main_img{
 height:500px;
-background-image: url(/images/with_1.jpeg);
+background-image: url(//images/with_01.jpeg);
 background-size: cover;
 }
-.main_txt{font-family: 'Shilla_CultureB-Bold';}
+.typing-effect{font-family: 'Shilla_CultureB-Bold';}
+
+/* typing effect */
+
+.typing-effect {
+  font-family: 'Shilla_CultureB-Bold', Arial, sans-serif;
+  font-size: 44px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(0, 0, 0, 0.75);
+  width: 0;
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+  margin: 20px;
+  display: inline;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: rgb(255, 255, 255);
+  }
+  to {
+    border-color: transparent;
+  }
+}
 
 /* header */
 .top{text-align: left;margin: 0;}
@@ -198,35 +231,116 @@ to {opacity: 1; transform: translateY(0); }
 } */
 
 /* photo img */
-.container{
-  display: inline;
-  width:100%;
-}
-.block{
-  display: inline-block;
-  width:180px;
-}
-.block img{
-  width:100%;
+
+/* popUp css */
+
+.gallery {
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: center;
 }
 
-.list {
-  column-count: 3;
-  column-gap: 15px;
-  padding: 15px;
+.gallery img {
+  width:30%;
+  padding: 2px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-.item {
-  display: inline-block;
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  break-inside: avoid;
-  margin-bottom: 15px;
-}
-.card{
-  display: flex;
-  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
+  align-items: center;
 }
-.card img{
-  width:100%;
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+/* 계좌, 메세지 추가 */
+.account {
+  padding: 20px;
+}
+
+.account button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  padding: 20px;
+}
+
+.message textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.message button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #28A745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message button:hover {
+  background-color: #218838;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* player */
+#player {
+ display: none;
 }
