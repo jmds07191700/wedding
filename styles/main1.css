@@ -149,7 +149,7 @@ color: transparent;
 .white_1{font-family: 'Pretendard-Semibold2';}
 
 /* page_1 */
-.ban{mix-blend-mode: difference; font-weight: 600;padding-top:100.9px;font-size: 40px;}
+.ban{mix-blend-mode: difference; font-weight: 600;padding-top:100.9px;font-size: 40px;font-family: "Pretendard-Semibold2";}
 .back_w{background-color: white;height: 140px;margin-top: 100px;}
 .img_box{text-align: center;}
 .img_1{width:90%;padding-top: 40px;}
