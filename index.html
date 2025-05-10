@@ -20,11 +20,9 @@
 </head>
 <body>
     <div class="main">
-        <div class="main_img typing-container">
             <!-- <span id="text"></span><span id="cursor"></span> -->
-            <p class="main_txt">Wedding Day</p>
-        </div>
-
+            <div class="typing-effect" id="typingText">Wedding Day</div>
+            <img style="width:90%;" src="images/with_01.jpeg" alt="">
         <audio controls autoplay loop id="player" src="images/antifreeze.mp3"></audio>
     </div>    
 
@@ -39,7 +37,7 @@
         </div>
     </header>
 
-    <div class="page_1 motion motion_up">
+    <div class="page_1 fade-in">
         <div class="back_w">
             <p class="ban">wedding</p>
         </div>
@@ -61,7 +59,7 @@
     </div>
     <br><br><br>
 
-    <div class="page_1_1">
+    <div class="page_1_1 fade-in">
         
         <div class="back_w">
             <p class="ban">Photo</p>
@@ -69,64 +67,39 @@
         <br><br><br>
         <br>
 
-        <div>
-            <ul class="list">
-                <li class="item">
-                    <div class="card"><img src="images/with_10.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_6.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_5.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_4.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_3.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_12.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_16.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_20.jpeg" alt=""></div>
-                </li>
-                <li class="item">
-                    <div class="card"><img src="images/with_19.jpeg" alt=""></div>
-                </li>
-            </ul>
-        </div>
+            <div class="gallery">
+                <img src="images/with_1.jpeg" alt="Sample Image 1">
+                <img src="images/with_2.jpeg" alt="Sample Image 2">
+                <img src="images/with_3.jpeg" alt="Sample Image 3">
+                <img src="images/with_4.jpeg" alt="Sample Image 4">
+                <img src="images/with_5.jpeg" alt="Sample Image 5">
+                <img src="images/with_6.jpeg" alt="Sample Image 6">
+                <img src="images/with_7.jpeg" alt="Sample Image 7">
+                <img src="images/with_8.jpeg" alt="Sample Image 2">
+                <img src="images/with_9.jpeg" alt="Sample Image 3">
+                <img src="images/with_10.jpeg" alt="Sample Image 1">
+                <img src="images/with_11.jpeg" alt="Sample Image 2">
+                <img src="images/with_12.jpeg" alt="Sample Image 3">
+              </div>
+
+
+        <div class="modal" id="photoModal">
+            <span class="arrow left" id="prevArrow">&#8592;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+            <span class="arrow right" id="nextArrow">&#8594;</span>
+          </div>
 
 
     </div>
 
 
-<!-- 
 
-<div class="container">
-    <div class="block">
-        <img src="images/with_6.jpeg">
-    </div>
-    <div class="block">
-        <img src="images/with_11.jpeg">
-    </div>
-    <div class="block">
-        <img src="images/with_13.jpeg">
-    </div>
-    <div class="block">
-        <img src="images/with_12.jpeg">
-    </div>
-</div> -->
 
 
 
    
 
-    <div class="page_2">
+    <div class="page_2 fade-in">
         <div class="back_w">
             <p class="ban">Groom</p>
         </div>
@@ -178,7 +151,7 @@
 
     </div>
 
-    <div class="page_3">
+    <div class="page_3 fade-in">
         <div class="back_w">
             <p class="ban">Bride</p>
         </div>
@@ -237,7 +210,7 @@
 
     </div>
 
-    <div class="page_4">
+    <div class="page_4 fade-in">
         <div class="back_w">
             <p class="ban" style="letter-spacing: -2px;">25.07.19. 17:00</p>
         </div>
@@ -269,12 +242,41 @@
         <br><br><br>
     </div>
 
-    <div class="page_5">
+    <div class="page_5 fade-in">
         <div class="back_w">
             <p class="ban">contact</p>
         </div>
 
-        <div>
+        <div class="contact">
+            <div class="con_bride">
+                <p class="white_5">Bride</p>
+                <ul>
+                    <li class="sms">
+                        <a href="sms:01073705181">
+                            <img src="images/apple-touch-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="money">
+                        <a href="">
+                            <img src="images/apple-touch-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div >
+                   
+                </div>
+            </div>
+            
+            <div class="con_groom">
+                <p class="white_5">Groom</p>
+                <div class="account fade-in" id="accountSection">
+                    <h2>계좌</h2>
+                    <p>신부 (박정민 : 신한)</p>
+                    <button onclick="copyToClipboard('110538553752')">복사하기</button>
+                    <p>신랑 (한덕수 : 농협)</p>
+                    <button onclick="copyToClipboard('3521085250413')">복사하기</button>
+                  </div>
+            </div>
 
         </div>
     </div>
@@ -285,7 +287,7 @@
     <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
     <!-- 3. 실행 스크립트 -->
-    <script charset="UTF-8">
+<script charset="UTF-8">
         new daum.roughmap.Lander({
             "timestamp" : "1740560871535",
             "key" : "2n6mf",
@@ -312,44 +314,130 @@
 
 });
 
-// 흐르는 사진
-
-let roller = document.querySelector('.roller .rolling_list');
-roller.id = 'roller1';
-let clone = roller.cloneNode(true)
-clone.id = 'roller2';
-document.querySelector('.roller').appendChild(clone);
-roller.classList.add('original');
-clone.classList.add('clone');
-
-$(document).ready(function(){
-    $('.item').click
-})
-
-var col = 3;
-    var xmg = 10;
-    var ymg = 10;
-
-    function block_sit(parent, node, col = 3, xmg = 10, ymg = 10){
-        $(parent).BlocksIt({
-            numOfCol: col,
-            offsetX: xmg,
-            offsetY: ymg,
-            blockElement: node
-        });
-    }
-
-    $('.block').masonry({
-            // options
-            itemSelector: node,
-            columnWidth: 200,
-            gutter: 10
-        });
-
-
     </script>
     
 
 
 </body>
+
+<script>
+//  타이핑효과
+document.addEventListener('DOMContentLoaded', () => {
+    const textElement = document.getElementById('typingText');
+    const fullText = 'Wedding Day';
+
+    // Optional: dynamically type out the text (already handled by CSS animation here)
+    let index = 0;
+    const typeText = () => {
+      if (index < fullText.length) {
+        textElement.textContent += fullText.charAt(index);
+        index++;
+        setTimeout(typeText, 100); // Adjust speed here
+      }
+    };
+    // Uncomment below to use JS typing instead of CSS animation
+    // typeText();
+  });
+    
+      // popUp
+      document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('photoModal');
+    const modalImage = document.getElementById('modalImage');
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const prevArrow = document.getElementById('prevArrow');
+    const nextArrow = document.getElementById('nextArrow');
+
+    let currentIndex = 0;
+    let startX = 0;
+    let endX = 0;
+
+    const openModal = (index) => {
+      currentIndex = index;
+      modalImage.src = galleryImages[currentIndex].src;
+      modal.style.display = 'flex';
+    };
+
+    const closeModal = () => {
+      modal.style.display = 'none';
+      modalImage.src = '';
+    };
+
+    const showNextImage = () => {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      modalImage.src = galleryImages[currentIndex].src;
+    };
+
+    const showPrevImage = () => {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      modalImage.src = galleryImages[currentIndex].src;
+    };
+
+    const handleSwipe = () => {
+      const diffX = startX - endX;
+      if (Math.abs(diffX) > 50) {
+        if (diffX > 0) {
+          showNextImage();
+        } else {
+          showPrevImage();
+        }
+      }
+    };
+
+    galleryImages.forEach((image, index) => {
+      image.addEventListener('click', () => openModal(index));
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    nextArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showNextImage();
+    });
+
+    prevArrow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showPrevImage();
+    });
+
+    modal.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    modal.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      handleSwipe();
+    });
+
+
+
+//   fade-in
+
+const fadeElements = document.querySelectorAll('.fade-in');
+
+const handleScroll = () => {
+  fadeElements.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+});
+
+// Copy to clipboard function
+const copyToClipboard = (text) => {
+navigator.clipboard.writeText(text).then(() => {
+  alert(`Copied to clipboard: ${text}`);
+});
+};
+
+
+</script>
 </html>
